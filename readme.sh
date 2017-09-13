@@ -6,5 +6,7 @@ if [[ $# -ne "$ARGS" ]]; then
   echo "Usage:`basename  $0` is need one args"
   exit $E_WRONG_ARGS
 fi
+cd /
+chmod 777 -r xiaoyun
 echo $1
 exit 0
