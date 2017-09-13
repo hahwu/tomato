@@ -8,3 +8,4 @@ BACKUPFILE=back-$(date +%m-%d-%Y)
 archive=${1:-$BACKUPFILE}
 
 echo archive
+echo $(date +%m-%d-%Y)
