@@ -7,6 +7,7 @@ if [[ $# -ne "$ARGS" ]]; then
   exit $E_WRONG_ARGS
 fi
 cd /
-chmod 777 -r xiaoyun
+pwd
+chmod -R 777 xiaoyun
 echo $1
 exit 0
