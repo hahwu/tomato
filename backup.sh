@@ -7,5 +7,5 @@ BACKUPFILE=backup-$(date +%m-%d-%Y)
 
 archive=${1:-$BACKUPFILE}
 
-echo archive
-echo BACKUPFILE
+echo $archive
+echo $BACKUPFILE
