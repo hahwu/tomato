@@ -3,7 +3,7 @@
 from random import randint
 from time import sleep
 from Queue import Queue
-from myThread import MyThread
+import threading
 
 def writeQ(queue):
     print 'producing object for Q...',
@@ -33,7 +33,7 @@ def main():
 
     threads = []
     for i in nfuncs:
-        t = MyThread(funcs[i],(q,nloops),funcs[i].__name__)
+        t = threading.Thread(funcs[i],(q,nloops),funcs[i].__name__)
         threads.append(t)
 
     for i in nfuncs:
