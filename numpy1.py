@@ -7,7 +7,7 @@ start = time.clock()
 for i,t in enumerate(x):
     x[i] = math.sin(t)
 print "math.sin:", time.clock() - start
-
+start = time.clock()
 x = [i * 0.001 for i in xrange(10000000)]
 x = np.array(x)
 start = time.clock()
