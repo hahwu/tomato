@@ -24,7 +24,7 @@ def test_fmin_convolve(fminfunc,x,h,y,yn,x0):
     #输出x(*)h0和y之间的相对误差
     print "error of y:",np.sum((np.convolve(x,h0)-y)**2)/np.sum(y**2)
     #输出h0和h之间的相对误差
-    print "error of h:"，np.sum((h0-h)**2)/np.sum(h**2)
+    print "error of h:",np.sum((h0-h)**2)/np.sum(h**2)
     print
 
 def test_n(m,n,nscale):
