@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
+import matplotlib
 import numpy as np
 from scipy.optimize import leastsq
 import pylab as pl
-
+matplotlib.use('Agg')
 def func(x,p):
     """
     数据拟合所用的函数:A*sin(2*pi*k*x + theta)
