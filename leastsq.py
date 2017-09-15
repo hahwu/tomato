@@ -25,12 +25,12 @@ p0 = [7,0.2,0]
 #residuals为计算误差的函数
 #p0为拟合参数的初始值
 #args为需要拟合的实验数据
-plsq = leastsq(residuals,p0,args(y1,x))
+plsq = leastsq(residuals,p0,args = (y1,x))
 
 print u"真实参数：",[A,k,theta]
 print u"拟合参数：",plsq[0] #实验数据拟合后的参数
- p1.plot(x,y0,label=u"真实数据")
- p1.plot(x,y1,label=u"带噪音的实验数据")
- p1.plot(x,func(x,plsq[0]),label=u"拟合数据")
- p1.legend()
- p1.show()
+pl.plot(x,y0,label=u"真实数据")
+pl.plot(x,y1,label=u"带噪音的实验数据")
+pl.plot(x,func(x,plsq[0]),label=u"拟合数据")
+pl.legend()
+pl.show()
