@@ -1,4 +1,4 @@
-# -*- coding;utf-8 -*-
+# -*- coding:utf-8 -*-
 #本程序用各种fmin函数求卷积的逆运算
 
 import scipy.optimize as opt
