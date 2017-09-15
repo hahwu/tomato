@@ -43,6 +43,6 @@ def test_n(m,n,nscale):
     test_fmin_convolve(opt.fmin_cg,x,h,y,yn,x0)
     test_fmin_convolve(opt.fmin_bfgs,x,h,y,yn,x0)
 
-if __name__  ==  "__mian__":
-    print "start"
-    test_n(200,20,0.1)
+
+print "start"
+test_n(200,20,0.1)
